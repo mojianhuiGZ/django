@@ -18,6 +18,6 @@ from django.urls import path
 from helloworld_site import views
 
 urlpatterns = [
-    path('', views.current_datetime_page),
+    path('', views.hello_page),
     path('admin/', admin.site.urls),
 ]

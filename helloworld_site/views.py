@@ -3,10 +3,8 @@ For more information please see:
     https://docs.djangoproject.com/en/2.1/topics/http/views/
 """
 from django.http import HttpResponse
-import datetime
 
 
-def current_datetime_page(request):
-    now = datetime.datetime.now()
-    html = "<html><body>It is now %s.</body></html>" % now
+def hello_page(request):
+    html = "<html><body>Hello World!</body></html>"
     return HttpResponse(html)
